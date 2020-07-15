@@ -1,10 +1,18 @@
 import React from 'react';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
+import App from './components/App';
+import rootReducer from './reducers/index';
+
+
+const initialState = { count: 0 };
+const store = createStore(rootReducer, initialState);
 
 ReactDOM.render(
-  <div>
-    <h1>react redux bookstore</h1>
-  </div>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root'),
 );
 

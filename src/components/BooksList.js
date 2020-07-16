@@ -4,10 +4,10 @@ import Book from './Book';
 
 const mapStateToProps = (state) => {
     return state;
-}
+};
 
 const BookList = (props) => {
-    const { id, title, category } = props.books;
+    const { id, title, category } = props.bookReducer;
     return (
     <table>
         <Book id={id} title={title} category={category} />

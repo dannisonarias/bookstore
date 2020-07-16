@@ -1,26 +1,29 @@
 import React from 'react';
 
 const initialState = {
-  id:'1',
-  title:'Book1',
-  category:'Sci-Fi',
-}
+  123: {
+    title: 'Book1',
+    category: 'Sci-Fi',
+  },
+  145: {
+    title: 'Book1',
+    category: 'Sci-Fi',
+  },
+};
 
-const bookReducer = (state = initialState ,action)=>
-{
-    switch(action.type) {
-      case 'REMOVE_BOOK': {
-        state: console.log('removing');
-        return state;
-      }
-      case 'ADD_BOOK': {
-        state: console.log('Adding book')
-        return state;
-      }
-      default: {
-        return state;
-      }
+const bookReducer = (state = initialState, action) => {
+  console.log(Object.assign(state));
+  switch (action.type) {
+    case 'REMOVE_BOOK': {
+      return (delete Object.assign(state)[action.item]);
     }
-    return state;
+    case 'ADD_BOOK': {
+      return (Object.assign(state));
+    }
+    default: {
+      return state;
+    }
+  }
+  return state;
 };
 export default bookReducer;

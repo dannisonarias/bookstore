@@ -6,11 +6,14 @@ const mapStateToProps = (state) => {
     return state;
 };
 
+const handleRemove = () => {
+};
+
 const BookList = (props) => {
-    const { id, title, category } = props.bookReducer;
+    const {title, category } = props.bookReducer[145];
     return (
     <table>
-        <Book id={id} title={title} category={category} />
+        <Book id='1' title={title} category={category} />
     </table>
     )
 };

@@ -6,12 +6,6 @@ const initialState = {
   category:'Sci-Fi',
 }
 
-//const INITIAL_STATE = () => {
-//  
-//  
-//  
-//};
-//Math.random() * (max - min) + min;
 const bookReducer = (state = initialState ,action)=>
 {
     switch(action.type) {

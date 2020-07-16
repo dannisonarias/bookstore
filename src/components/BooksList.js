@@ -6,7 +6,6 @@ const mapStateToProps = (state) => {
     return state;
 }
 
-
 const BookList = (props) => {
     const { id, title, category } = props.books;
     return (

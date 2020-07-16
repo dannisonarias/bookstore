@@ -5,9 +5,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import rootReducer from './reducers/index';
 
-
-const initialState = { count: 0 };
-const store = createStore(rootReducer, initialState);
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>

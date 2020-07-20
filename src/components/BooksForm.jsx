@@ -25,10 +25,6 @@ class BooksForm extends React.Component {
     this.setState({ category: event.target.value });
   }
 
-  // createBook = (event) => {
-
-  // }
-
   handleSubmit(event) {
     event.preventDefault();
     const book = Object.assign(this.state);

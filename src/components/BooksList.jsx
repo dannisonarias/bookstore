@@ -7,16 +7,6 @@ const mapStateToProps = state => state;
 const handleRemove = () => {
 };
 
-const bookOutput = ({key, title, category}) => {
-  return (<tr key = {key}>
-        <th>{key}</th>
-        <th>{title}</th>
-        <th>{category}</th>
-    </tr>);
-}
-
-
-
 const BookList = props => {
   const books = props.bookReducer;
   return (
@@ -29,7 +19,7 @@ const BookList = props => {
        </tr>
       </thead>
       <tbody>
-        {Object.keys(books).map((key) => bookOutput({key:key, title:books[key]['title'], category:books[key]['category']}))}
+        {Object.keys(books).map((key) =><Book id={key} title={books[key]['title']} category={books[key]['category']}/>)}
       </tbody>
     </table>
   );

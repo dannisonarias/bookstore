@@ -4,8 +4,6 @@ import Book from './Book';
 
 const mapStateToProps = state => state;
 
-const handleRemove = () => {
-};
 const BookList = props => {
   const books = props.bookReducer;
   return (

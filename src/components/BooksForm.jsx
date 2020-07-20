@@ -25,10 +25,15 @@ class BooksForm extends React.Component {
     this.setState({ category: event.target.value });
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
+  createBook() {
     const book = Object.assign(this.state);
     book.id = this.idCreator();
+    return book;
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    const book = this.createBook();
     this.props.dispatch(ADD_BOOK(book));
   }
 
@@ -40,7 +45,7 @@ class BooksForm extends React.Component {
         <input onChange={this.handleChange} value={this.state.title} type="text" name="title" />
         <label>Category: </label>
         <select onChange={this.handleChangeCategory} value={this.state.category} name="Category">
-          {BOOKS_CATEGORY.map((x,index) => this.booksOption(x, index))}
+          {BOOKS_CATEGORY.map((x, index) => this.booksOption(x, index))}
         </select>
         <input onClick={this.handleSubmit} type="submit" />
       </form>

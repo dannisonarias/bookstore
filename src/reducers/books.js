@@ -1,5 +1,3 @@
-import React from 'react';
-
 const initialState = {
   1: {
     title: 'Book1',

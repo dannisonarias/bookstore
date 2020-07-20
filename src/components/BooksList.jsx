@@ -2,12 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Book from './Book';
 
-const mapStateToProps = state => state.bookReducer;
+const mapStateToProps = state => state;
 
 const handleRemove = () => {
 };
 const BookList = props => {
-  const books = props;
+  const books = props.bookReducer;
   return (
     <table>
       <thead>

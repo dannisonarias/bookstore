@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Book = (props) => {
-    const { id, title, category } = props;
+    const { key, title, category } = props;
     return (
-    <tr>
-        <th>{id}</th>
+    <tr key = {key}>
+        <th>{key}</th>
         <th>{title}</th>
         <th>{category}</th>
     </tr>

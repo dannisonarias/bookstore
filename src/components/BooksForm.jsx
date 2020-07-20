@@ -11,8 +11,8 @@ class BooksForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  booksOption(e) {
-    return (<option>{e}</option>);
+  booksOption(e, index) {
+    return (<option key={index}>{e}</option>);
   }
 
   idCreator() { return (Math.floor(Math.random() * 100) * Date.now()); }
@@ -40,7 +40,7 @@ class BooksForm extends React.Component {
         <input onChange={this.handleChange} value={this.state.title} type="text" name="title" />
         <label>Category: </label>
         <select onChange={this.handleChangeCategory} value={this.state.category} name="Category">
-          {BOOKS_CATEGORY.map(x => this.booksOption(x))}
+          {BOOKS_CATEGORY.map((x,index) => this.booksOption(x, index))}
         </select>
         <input onClick={this.handleSubmit} type="submit" />
       </form>

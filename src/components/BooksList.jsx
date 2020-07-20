@@ -19,7 +19,7 @@ const BookList = props => {
        </tr>
       </thead>
       <tbody>
-        {Object.keys(books).map((key) =><Book id={key} title={books[key]['title']} category={books[key]['category']}/>)}
+        {Object.keys(books).map((key) =><Book key={key} id={key} title={books[key]['title']} category={books[key]['category']}/>)}
       </tbody>
     </table>
   );

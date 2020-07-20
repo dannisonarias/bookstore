@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Book from './Book';
-import REMOVE_BOOK from '../actions/index';
+import {REMOVE_BOOK} from '../actions/index';
 
 const mapStateToProps = state => state.bookReducer;
 

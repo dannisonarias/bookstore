@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Book from './Book';
+import CategoryFilter from './CategoryFilter';
 import { REMOVE_BOOK } from '../actions/index';
+import { CHANGE_FILTER } from '../actions/index';
 
 const mapStateToProps = state => state;
 
@@ -11,7 +13,13 @@ const BookList = props => {
     props.dispatch(REMOVE_BOOK(newbook));
   };
 
+  const filterCategory = category => {
+    console.log(props);
+    props.dispatch(CHANGE_FILTER(category))
+  };
+
   const books = props.bookReducer;
+  const filter = props.filterReducer;
   return (
     <table>
       <thead>
@@ -19,6 +27,7 @@ const BookList = props => {
           <th>id</th>
           <th>title</th>
           <th>category</th>
+          <th><CategoryFilter filterCategory={filterCategory} filter={filter}/></th>
         </tr>
       </thead>
       <tbody>

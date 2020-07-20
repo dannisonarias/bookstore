@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ADD_BOOK from '../actions/index';
+import { ADD_BOOK } from '../actions/index';
 
 class BooksForm extends React.Component {
   constructor(props) {

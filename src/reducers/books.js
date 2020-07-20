@@ -1,5 +1,3 @@
-import React from 'react';
-
 const initialState = {
   1: {
     title: 'Book1',
@@ -14,7 +12,7 @@ const initialState = {
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'REMOVE_BOOK': {
-      const newState = {...state};
+      const newState = { ...state };
       const key = Object.keys(action.book);
       delete newState[key];
 
@@ -30,4 +28,5 @@ const bookReducer = (state = initialState, action) => {
   }
   return state;
 };
+
 export default bookReducer;

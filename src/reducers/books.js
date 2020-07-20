@@ -12,16 +12,13 @@ const initialState = {
 };
 
 const bookReducer = (state = initialState, action) => {
-  
   switch (action.type) {
     case 'REMOVE_BOOK': {
       return (delete Object.assign(state)[action.item]);
     }
     case 'ADD_BOOK': {
       const { id, category, title } = action.book;
-      const newBook = Object.assign(state);
-      newBook[id] = { title, category };
-      return newBook;
+      return { ...state, [id]: { category, title } };
     }
     default: {
       return state;

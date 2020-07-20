@@ -6,7 +6,6 @@ const mapStateToProps = state => state.bookReducer;
 
 const handleRemove = () => {
 };
-
 const BookList = props => {
   const books = props;
   return (

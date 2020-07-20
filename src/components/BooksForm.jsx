@@ -15,7 +15,7 @@ class BooksForm extends React.Component {
     return (<option key={index}>{e}</option>);
   }
 
-  idCreator() { return (Math.floor(Math.random() * 100) * Date.now()); }
+  idCreator() { return (Date.now()); }
 
   handleChange(event) {
     this.setState({ title: event.target.value });

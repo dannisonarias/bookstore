@@ -1,11 +1,11 @@
 import React from 'react';
 
 const initialState = {
-  123: {
+  1: {
     title: 'Book1',
     category: 'Sci-Fi',
   },
-  145: {
+  2: {
     title: 'Book1',
     category: 'Sci-Fi',
   },
@@ -14,7 +14,9 @@ const initialState = {
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'REMOVE_BOOK': {
-      return (delete Object.assign(state)[action.item]);
+      const newState = Object.assign(state);
+      delete newState.action.book.id;
+      return newState;
     }
     case 'ADD_BOOK': {
       const { id, category, title } = action.book;

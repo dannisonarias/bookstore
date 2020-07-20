@@ -11,7 +11,7 @@ const Book = props => {
       <th>{id}</th>
       <th>{title}</th>
       <th>{category}</th>
-      <th><button type="button" onClick={()=>{handleRemove(id)}}>remove</button></th>
+      <th><button type="button" onClick={() => { handleRemove(id); }}>remove</button></th>
     </tr>
   );
 };

@@ -30,3 +30,5 @@ const BookList = props => {
     </table>
   );
 };
+
+export default connect(mapStateToProps)(BookList);

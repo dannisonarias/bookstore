@@ -14,8 +14,7 @@ const BookList = props => {
   };
 
   const filterCategory = event => {
-    console.log(event);
-    props.dispatch(CHANGE_FILTER(event))
+    props.dispatch(CHANGE_FILTER(event.target.value))
   };
 
   const books = props.bookReducer;

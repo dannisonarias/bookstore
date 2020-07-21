@@ -13,9 +13,9 @@ const BookList = props => {
     props.dispatch(REMOVE_BOOK(newbook));
   };
 
-  const filterCategory = category => {
-    console.log(props);
-    props.dispatch(CHANGE_FILTER(category))
+  const filterCategory = event => {
+    console.log(event);
+    props.dispatch(CHANGE_FILTER(event))
   };
 
   const books = props.bookReducer;

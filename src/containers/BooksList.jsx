@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
+
 import { REMOVE_BOOK } from '../actions/index';
+
 
 const mapStateToProps = state => state;
 
@@ -23,9 +25,8 @@ const BookList = props => {
       </thead>
       <tbody>
         {Object.keys(books).map(key => <Book handleRemove={handleRemove} key={key} id={key} title={books[key].title} category={books[key].category} />)}
+
       </tbody>
     </table>
   );
 };
-
-export default connect(mapStateToProps)(BookList);

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Book = props => {
   const {
-    id, title, category, handleRemove, filter
+    id, title, category, handleRemove, filter,
   } = props;
   if (filter.filter === '' || filter.filter === category) {
     return (
@@ -15,9 +15,8 @@ const Book = props => {
       </tr>
     );
   }
-  else {
-    return null;
-  }
+
+  return null;
 };
 
 Book.propTypes = {
@@ -25,6 +24,9 @@ Book.propTypes = {
   title: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   handleRemove: PropTypes.func.isRequired,
+  filter: PropTypes.shape({
+    filter: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Book;

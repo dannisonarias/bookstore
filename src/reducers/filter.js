@@ -1,6 +1,6 @@
 const initialState = {
   filter: '',
-}
+};
 
 const filterReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -11,7 +11,6 @@ const filterReducer = (state = initialState, action) => {
       return state;
     }
   }
-  return state;
 };
 
 export default filterReducer;

@@ -1,12 +1,4 @@
 const initialState = {
-  1: {
-    title: 'Book1',
-    category: 'Sci-Fi',
-  },
-  2: {
-    title: 'Book1',
-    category: 'Sci-Fi',
-  },
 };
 
 const bookReducer = (state = initialState, action) => {
@@ -19,7 +11,6 @@ const bookReducer = (state = initialState, action) => {
       return newState;
     }
     case 'ADD_BOOK': {
-      console.log( action.book)
       const { id, category, title } = action.book;
       return { ...state, [id]: { category, title } };
     }
@@ -27,7 +18,6 @@ const bookReducer = (state = initialState, action) => {
       return state;
     }
   }
-  return state;
 };
 
 export default bookReducer;

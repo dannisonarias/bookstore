@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CategoryFilter = (props) => {
-  const { filter, filterCategory } = props
+  const { filterCategory } = props
   const BOOKS_CATEGORY = ['ALL', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   
   const booksOption = (e, index) => {

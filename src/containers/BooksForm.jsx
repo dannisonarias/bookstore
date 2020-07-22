@@ -35,6 +35,7 @@ class BooksForm extends React.Component {
     event.preventDefault();
     const book = this.createBook();
     this.props.dispatch(ADD_BOOK(book));
+    this.setState({title:'', category:''});
   }
 
   render() {

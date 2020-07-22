@@ -17,15 +17,6 @@ const Book = props => {
   }
 
   return null;
-  return (
-    <tr>
-      <th>{id}</th>
-      <th>{title}</th>
-      <th>{(category === '' ? 'None' : category)}</th>
-      <th><button type="button" onClick={() => { handleRemove(id); }}>remove</button></th>
-    </tr>
-  );
-
 };
 
 Book.defaultProps = {

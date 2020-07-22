@@ -7,7 +7,6 @@ const bookReducer = (state = initialState, action) => {
       const newState = { ...state };
       const key = Object.keys(action.book);
       delete newState[key];
-
       return newState;
     }
     case 'ADD_BOOK': {

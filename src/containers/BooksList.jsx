@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
+
 import CategoryFilter from '../components/CategoryFilter';
 import { REMOVE_BOOK } from '../actions/index';
 import { CHANGE_FILTER } from '../actions/index';
@@ -8,7 +9,6 @@ import { CHANGE_FILTER } from '../actions/index';
 const mapStateToProps = state => state;
 
 const BookList = props => {
-
   const handleRemove = key => {
     const newbook = { [key]: props[key] };
     props.dispatch(REMOVE_BOOK(newbook));

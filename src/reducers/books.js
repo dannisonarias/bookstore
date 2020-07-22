@@ -19,6 +19,7 @@ const bookReducer = (state = initialState, action) => {
       return newState;
     }
     case 'ADD_BOOK': {
+      console.log( action.book)
       const { id, category, title } = action.book;
       return { ...state, [id]: { category, title } };
     }

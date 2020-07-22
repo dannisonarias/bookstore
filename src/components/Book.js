@@ -5,7 +5,7 @@ const Book = props => {
   const {
     id, title, category, handleRemove, filter
   } = props;
-  if (filter === '' || filter === category) {
+  if (filter.filter === '' || filter.filter === category) {
     return (
       <tr>
         <th>{id}</th>

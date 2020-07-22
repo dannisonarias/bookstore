@@ -15,9 +15,9 @@ const BookList = props => {
   };
 
   const filterCategory = event => {
-    let aux = event.target.value;
-    if (aux === 'ALL') {
-      aux = '';
+    let aux = {filter: event.target.value}
+    if (aux.filter === 'ALL') {
+      aux = {filter: ''};
     }
     props.dispatch(CHANGE_FILTER(aux))
   };

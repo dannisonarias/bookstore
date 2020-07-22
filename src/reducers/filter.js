@@ -8,7 +8,7 @@ const filterReducer = (state = initialState, action) => {
       return action.category;
     }
     default: {
-      return state.filter;
+      return state;
     }
   }
   return state;

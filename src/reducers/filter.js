@@ -4,11 +4,11 @@ const initialState = {
 
 const filterReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'CHANGE_FILTER ': {
+    case 'CHANGE_FILTER': {
       return action.category;
     }
     default: {
-      return state;
+      return state.filter;
     }
   }
   return state;

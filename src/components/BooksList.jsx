@@ -8,13 +8,18 @@ import { CHANGE_FILTER } from '../actions/index';
 const mapStateToProps = state => state;
 
 const BookList = props => {
+
   const handleRemove = key => {
     const newbook = { [key]: props[key] };
     props.dispatch(REMOVE_BOOK(newbook));
   };
 
   const filterCategory = event => {
-    props.dispatch(CHANGE_FILTER(event.target.value))
+    let aux = event.target.value;
+    if (aux === 'ALL') {
+      aux = '';
+    }
+    props.dispatch(CHANGE_FILTER(aux))
   };
 
   const books = props.bookReducer;
@@ -30,7 +35,7 @@ const BookList = props => {
         </tr>
       </thead>
       <tbody>
-        {Object.keys(books).map(key => <Book handleRemove={handleRemove} key={key} id={key} title={books[key].title} category={books[key].category} />)}
+        {Object.keys(books).map(key => <Book handleRemove={handleRemove} filter={filter} key={key} id={key} title={books[key].title} category={books[key].category} />)}
       </tbody>
     </table>
   );

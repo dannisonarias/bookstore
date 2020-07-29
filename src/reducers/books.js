@@ -1,12 +1,4 @@
 const initialState = {
-  1: {
-    title: 'Book1',
-    category: 'Sci-Fi',
-  },
-  2: {
-    title: 'Book1',
-    category: 'Sci-Fi',
-  },
 };
 
 const bookReducer = (state = initialState, action) => {

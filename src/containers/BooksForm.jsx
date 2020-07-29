@@ -5,7 +5,7 @@ import { ADD_BOOK } from '../actions/index';
 class BooksForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { title: '', category: '' };
+    this.state = { title: '', category: 'Action' };
     this.handleChangeCategory = this.handleChangeCategory.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);

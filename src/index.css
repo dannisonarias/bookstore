@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .d-flex {
   display: flex;
 }
@@ -226,4 +230,16 @@ span {
   border-color: #379cf6;
   border-left-color: #e1e1e1;
   transform: rotate(45deg);
+}
+
+.percentage {
+  padding-left: 8px;
+  color: #212121;
+  font-size:30px;
+}
+
+.completed {
+  padding-left: 8px;
+  color: #121212;
+  font-size: 14px;
 }

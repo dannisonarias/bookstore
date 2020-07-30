@@ -22,6 +22,10 @@ const Book = props => {
         <div className="d-flex justify-c-center align-i-center">
           <div className="completition-bar" >
           </div>
+          <div>
+            <p class="percentage m-0 ">64%</p>
+            <p class="completed m-0 op-05">Completed</p>
+          </div>
         </div>
       </tr>
     );

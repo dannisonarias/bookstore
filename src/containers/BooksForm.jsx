@@ -5,7 +5,7 @@ import { ADD_BOOK } from '../actions/index';
 class BooksForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { title: '', category: 'Action' };
+    this.state = { title: '', category: '' };
     this.handleChangeCategory = this.handleChangeCategory.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -41,13 +41,13 @@ class BooksForm extends React.Component {
     const BOOKS_CATEGORY = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
     return (
       <form>
-        <label>Title: </label>
-        <input onChange={this.handleChange} value={this.state.title} type="text" name="title" />
-        <label>Category: </label>
-        <select onChange={this.handleChangeCategory} value={this.state.category} name="Category">
+        <h2>ADD NEW BOOK</h2>
+        <input className="name-input border-inputs " onChange={this.handleChange} value={this.state.title} type="text" name="title" placeholder="Book Name"/>
+        <select className="select-input border-inputs " onChange={this.handleChangeCategory} value={this.state.category} name="Category" placeholder="Category" >
+          <option className="option placeholder" disable selected>Category</option>
           {BOOKS_CATEGORY.map((x, index) => this.booksOption(x, index))}
         </select>
-        <input onClick={this.handleSubmit} type="submit" />
+        <input className="button-one" onClick={this.handleSubmit} type="submit" value="ADD BUTTON"/>
       </form>
     );
   }

@@ -1,14 +1,16 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif, 'Roboto Slab';
   height: 100vh;
-  padding: 149px 100px 100px 188px !important;
+  padding: 109px 60px 60px 109px !important;
   margin: 0;
 }
 
-/* Baseline */
-
 .d-flex {
   display: flex;
+}
+
+.d-none {
+  display: none;
 }
 
 .justify-c-center {
@@ -25,6 +27,16 @@ body {
 
 .op-05 {
   opacity: 0.5;
+}
+
+.op-02 {
+  opacity: 0.2;
+}
+
+.border-inputs {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e8e8e8
 }
 
 /* component-specific */ 
@@ -48,6 +60,14 @@ h1 {
   color: #0290ff;
 }
 
+
+h2 {
+  font-weight: bold;
+  color: #888888;
+  font-size: 20px;
+  letter-spacing: -0.18px;
+}
+
 .header {
   height: 95px;
 }
@@ -59,4 +79,40 @@ h1 {
   border-width: thin;
 }
 
+.name-input {
+  height: 45px;
+  width: 624px;
+  margin-right: 37px;
+  padding: 0;
+}
 
+.select-input {
+  height: 47px;
+  width: 245px;
+  margin-right: 37px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       /* Remove default arrow */
+}
+
+.button-one {
+  width: 184px;
+  height: 48px;
+  background-color: #0290ff;
+  color: #fafafa;
+  border-style: none;
+  font-family: 'Roboto Slab';
+  font-weight: bold;
+}
+
+.button-one:hover {
+  cursor: pointer;
+}
+
+.placeholder {
+  margin-left: 15px;
+  color: #c4c4c4;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  letter-spacing: -0.15px;
+}

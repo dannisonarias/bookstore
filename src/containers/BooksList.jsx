@@ -16,7 +16,7 @@ const BookList = props => {
 
   const filterCategory = event => {
     let aux = {filter: event.target.value}
-    if (aux.filter === 'ALL') {
+    if (aux.filter === 'ALL' || filter === 'Category') {
       aux = {filter: ''};
     }
     props.dispatch(CHANGE_FILTER(aux))
@@ -26,7 +26,7 @@ const BookList = props => {
   const filter = props.filterReducer;
   return (
     <table>
-      <thead className="thead">
+      <thead className="d-none">
         <tr>
           <th>id</th>
           <th>title</th>

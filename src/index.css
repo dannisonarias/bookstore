@@ -9,6 +9,10 @@ body {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .d-none {
   display: none;
 }
@@ -19,6 +23,14 @@ body {
 
 .align-i-center {
   align-items: center;
+}
+
+.align-i-between {
+  align-items: space-between;
+}
+
+.align-i-start {
+  align-items: flex-start;
 }
 
 .p-l-100 {
@@ -70,6 +82,10 @@ h2 {
 
 .header {
   height: 95px;
+}
+
+.books-container {
+  width: 100%;
 }
 
 .card {
@@ -154,3 +170,29 @@ h2 {
   letter-spacing: -0.15px;
 }
 
+/* Cards */
+
+.title {
+  font-size: 22px;
+  font-family: 'Roboto Slab';
+}
+
+.category {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  color: #121212;
+  font-weight: bold;
+}
+
+.button-card {
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+}
+
+.author {
+  color: #4386bf;
+  font-size: 14px;
+  font-family: 'Roboto Slab';
+  font-weight: lighter;
+}

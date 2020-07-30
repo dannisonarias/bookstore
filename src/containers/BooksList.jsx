@@ -25,7 +25,7 @@ const BookList = props => {
   const books = props.bookReducer;
   const filter = props.filterReducer;
   return (
-    <table>
+    <table  className="books-container">
       <thead className="d-none">
         <tr>
           <th>id</th>

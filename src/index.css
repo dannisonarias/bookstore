@@ -90,9 +90,29 @@ h2 {
   height: 47px;
   width: 245px;
   margin-right: 37px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;       /* Remove default arrow */
+  appearance: none;
+  position: relative;
+}
+
+.select-input::-ms-expand {
+  display: none;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+}
+
+.arrow::after {
+  content: "▼";
+  color: #c7c7c7;
+  font-size: 25px;
+  letter-spacing: -0.23px;
+  right: 11px;
+  top: 10px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
 }
 
 .button-one {
@@ -107,6 +127,7 @@ h2 {
 
 .button-one:hover {
   cursor: pointer;
+  color: #212121;
 }
 
 .placeholder {
@@ -116,3 +137,4 @@ h2 {
   font-size: 16px;
   letter-spacing: -0.15px;
 }
+

@@ -43,10 +43,12 @@ class BooksForm extends React.Component {
       <form>
         <h2>ADD NEW BOOK</h2>
         <input className="name-input border-inputs " onChange={this.handleChange} value={this.state.title} type="text" name="title" placeholder="Book Name"/>
-        <select className="select-input border-inputs " onChange={this.handleChangeCategory} value={this.state.category} name="Category" placeholder="Category" >
-          <option className="option placeholder" disable selected>Category</option>
-          {BOOKS_CATEGORY.map((x, index) => this.booksOption(x, index))}
-        </select>
+        <div className="arrow select-input">
+          <select className=" border-inputs select-input" onChange={this.handleChangeCategory} value={this.state.category} name="Category" placeholder="Category" >
+            <option className="option placeholder" disable selected>Category</option>
+            {BOOKS_CATEGORY.map((x, index) => this.booksOption(x, index))}
+          </select>
+        </div>
         <input className="button-one" onClick={this.handleSubmit} type="submit" value="ADD BUTTON"/>
       </form>
     );

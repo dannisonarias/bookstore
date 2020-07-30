@@ -1,7 +1,8 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   height: 100vh;
   padding: 149px 100px 100px 188px !important;
+  margin: 0;
 }
 
 /* Baseline */
@@ -22,9 +23,34 @@ body {
   padding-left: 100px;
 }
 
+.op-05 {
+  opacity: 0.5;
+}
+
 /* component-specific */ 
 
-.thead {}
+ul {
+  list-style: none;
+  letter-spacing: 1.9px;
+  padding-bottom: 12px;
+  font-size: 19px;
+}
+
+li {
+  margin-right: 47px;
+  font-size: 13px;
+  color: #121212;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #0290ff;
+}
+
+.header {
+  height: 95px;
+}
 
 .card {
   height: 170px;

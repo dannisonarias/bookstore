@@ -1,7 +1,9 @@
+html {
+  padding: 100px;
+}
+
 body {
   font-family: 'Montserrat', sans-serif, 'Roboto Slab';
-  height: 100vh;
-  padding: 109px 60px 60px 109px !important;
   margin: 0;
 }
 
@@ -96,6 +98,7 @@ h2 {
   border-radius: 4px;
   border-color: #e8e8e8;
   border-width: 1px;
+  margin-bottom: 10px;
 }
 
 .name-input {
@@ -177,6 +180,7 @@ h2 {
 
 .title {
   font-size: 22px;
+  font-weight: bold;
   font-family: 'Roboto Slab';
 }
 
@@ -185,6 +189,7 @@ h2 {
   font-family: 'Montserrat';
   color: #121212;
   font-weight: bold;
+  margin-bottom: 3px;
 }
 
 .button-card {

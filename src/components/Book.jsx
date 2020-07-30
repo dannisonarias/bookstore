@@ -13,9 +13,9 @@ const Book = props => {
           <th className="title">{title}</th>
           <th className="author">H.P Lovecraft</th>
           <th className="remove">
-            <button className="button-card author" type="button" onClick={() => { handleRemove(id); }}>Comment</button><span>&nbsp;|&nbsp;</span>
+            <button className="button-card author" type="button" onClick={() => { handleRemove(id); }}>Comment</button><span class="op-05">&nbsp;|&nbsp;</span>
             <button className="button-card author" type="button" onClick={() => { handleRemove(id); }}>Remove</button>
-            <span>&nbsp;|&nbsp;</span>
+            <span class="op-05">&nbsp;|&nbsp;</span>
             <button className="button-card author" type="button" onClick={() => { handleRemove(id); }}>Edit</button>
           </th>
         </div>

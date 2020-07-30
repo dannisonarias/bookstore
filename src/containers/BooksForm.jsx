@@ -49,7 +49,7 @@ class BooksForm extends React.Component {
             {BOOKS_CATEGORY.map((x, index) => this.booksOption(x, index))}
           </select>
         </div>
-        <input className="button-one" onClick={this.handleSubmit} type="submit" value="ADD BUTTON"/>
+        <input className="button-one" onClick={this.handleSubmit} type="submit" value="ADD BOOK"/>
       </form>
     );
   }

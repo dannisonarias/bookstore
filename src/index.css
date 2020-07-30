@@ -93,6 +93,9 @@ h2 {
   padding-left: 27px;
   border-style: solid;
   border-width: thin;
+  border-radius: 4px;
+  border-color: #e8e8e8;
+  border-width: 1px;
 }
 
 .name-input {
@@ -194,5 +197,10 @@ h2 {
   color: #4386bf;
   font-size: 14px;
   font-family: 'Roboto Slab';
+  font-weight: lighter;
+}
+
+span {
+  color: #121212;
   font-weight: lighter;
 }

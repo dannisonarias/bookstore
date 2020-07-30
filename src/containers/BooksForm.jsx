@@ -12,7 +12,7 @@ class BooksForm extends React.Component {
   }
 
   booksOption(e, index) {
-    return (<option key={index}>{e}</option>);
+    return (<option className="option" key={index}>{e}</option>);
   }
 
   idCreator() { return (Date.now()); }
@@ -42,10 +42,10 @@ class BooksForm extends React.Component {
     return (
       <form>
         <h2>ADD NEW BOOK</h2>
-        <input className="name-input border-inputs " onChange={this.handleChange} value={this.state.title} type="text" name="title" placeholder="Book Name"/>
+        <input className="input-general name-input border-inputs " onChange={this.handleChange} value={this.state.title} type="text" name="title" placeholder="Book Name"/>
         <div className="arrow select-input">
-          <select className=" border-inputs select-input" onChange={this.handleChangeCategory} value={this.state.category} name="Category" placeholder="Category" >
-            <option className="option placeholder" disable selected>Category</option>
+          <select className="input-general border-inputs select-input" onChange={this.handleChangeCategory} value={this.state.category} name="Category" placeholder="Category" >
+            <option className="option color-light" disable selected>Category</option>
             {BOOKS_CATEGORY.map((x, index) => this.booksOption(x, index))}
           </select>
         </div>

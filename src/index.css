@@ -84,6 +84,15 @@ h2 {
   width: 624px;
   margin-right: 37px;
   padding: 0;
+
+}
+
+.input-general { 
+  color: #121212;
+  font-family: "Montserrat";
+  font-size: 16px;
+  letter-spacing: -0.23px;
+  padding-left: 17px;
 }
 
 .select-input {
@@ -92,6 +101,14 @@ h2 {
   margin-right: 37px;
   appearance: none;
   position: relative;
+}
+
+.option {
+  font-family: "Montserrat";
+}
+
+.color-light {
+  color: #c4c4c4;
 }
 
 .select-input::-ms-expand {
@@ -112,7 +129,6 @@ h2 {
   top: 10px;
   padding: 0 0 2px;
   position: absolute;
-  pointer-events: none;
 }
 
 .button-one {
@@ -127,7 +143,7 @@ h2 {
 
 .button-one:hover {
   cursor: pointer;
-  color: #212121;
+  color: #fafafa;
 }
 
 .placeholder {

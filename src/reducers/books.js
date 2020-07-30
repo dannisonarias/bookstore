@@ -1,15 +1,11 @@
 const initialState = {
   0: {
-    'title': "Little red riding hood travels to Insmouth",
+    'title': "Little red riding hood travels to Innsmouth",
     'category': "Kids"
   },
   1: {
     'title': "Calamar Recipes, with Brian",
     'category': "Learning"
-  },
-  2: {
-    'title': "Why are people still sane?",
-    'category': "Biography"
   },
   3: {
     'title': "The life of Albert N. Wilmarth",

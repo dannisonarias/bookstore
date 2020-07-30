@@ -23,8 +23,14 @@ const Book = props => {
           <div className="completition-bar" >
           </div>
           <div>
-            <p class="percentage m-0 ">64%</p>
-            <p class="completed m-0 op-05">Completed</p>
+            <p className="percentage m-0 ">64%</p>
+            <p className="completed m-0 op-05">Completed</p>
+          </div>
+          <div className="vertical-line op-05"></div>
+          <div>
+            <p className="progress-title m-0 progress-update-text op-05">CURRENT CHAPTER</p>
+            <p className="chapter m-0 progress-update-text">Chapter: 43</p>
+            <button className="button-one button-two">UPDATE PROGRESS</button>
           </div>
         </div>
       </tr>

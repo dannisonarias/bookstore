@@ -19,6 +19,10 @@ const Book = props => {
             <button className="button-card author" type="button" onClick={() => { handleRemove(id); }}>Edit</button>
           </th>
         </div>
+        <div>
+          <div class="completition-bar">
+          </div>
+        </div>
       </tr>
     );
   }

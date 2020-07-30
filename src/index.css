@@ -209,3 +209,17 @@ span {
   color: #121212;
   font-weight: lighter;
 }
+
+
+/* Completition bar */
+
+.completition-bar {
+  height: 64px;
+  width: 64px;
+  border-style: solid;
+  border-radius: 100%;
+  border-width: 5px;
+  border-color: #379cf6;
+  border-left-color: #e1e1e1;
+  transform: rotate(45deg);
+}

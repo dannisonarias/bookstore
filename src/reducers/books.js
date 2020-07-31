@@ -1,16 +1,16 @@
 const initialState = {
   0: {
-    'title': "Little red riding hood travels to Innsmouth",
-    'category': "Kids"
+    title: 'Little red riding hood travels to Innsmouth',
+    category: 'Kids',
   },
   1: {
-    'title': "Calamar Recipes, with Brian",
-    'category': "Learning"
+    title: 'Calamar Recipes, with Brian',
+    category: 'Learning',
   },
   3: {
-    'title': "The life of Albert N. Wilmarth",
-    'category': "Biography"
-  }
+    title: 'The life of Albert N. Wilmarth',
+    category: 'Biography',
+  },
 };
 
 const bookReducer = (state = initialState, action) => {

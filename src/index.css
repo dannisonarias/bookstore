@@ -4,12 +4,12 @@ html {
 
 body {
   background-color: #fafafa;
-  font-family: 'Montserrat', sans-serif, 'Roboto Slab';
+  font-family: 'Montserrat', 'Roboto Slab', sans-serif;
   margin: 0;
   padding: 55px;
-  -webkit-box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.13);
-  -moz-box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.13);
-  box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 51px -3px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0 0 51px -3px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0 51px -3px rgba(0, 0, 0, 0.15);
 }
 
 .m-0 {
@@ -33,7 +33,7 @@ body {
 }
 
 .justify-c-center {
-  justify-content: center
+  justify-content: center;
 }
 
 .justify-c-between {
@@ -44,8 +44,8 @@ body {
   align-items: center;
 }
 
-.align-i-between {
-  align-items: space-between;
+.align-c-between {
+  align-content: space-between;
 }
 
 .align-i-start {
@@ -67,7 +67,7 @@ body {
 .border-inputs {
   border-style: solid;
   border-width: 1px;
-  border-color: #e8e8e8
+  border-color: #e8e8e8;
 }
 
 /* component-specific */
@@ -95,10 +95,9 @@ h1 {
   color: #0290ff;
 }
 
-
 h2 {
   font-weight: bold;
-  color: #888888;
+  color: #888;
   font-size: 20px;
   letter-spacing: -0.18px;
 }
@@ -106,7 +105,6 @@ h2 {
 .header {
   min-height: 95px;
   position: relative;
-  
 }
 
 .user-icon {
@@ -138,7 +136,6 @@ h2 {
   min-height: 170px;
   padding: 0 27px 0 27px;
   border-style: solid;
-  border-width: thin;
   border-radius: 4px;
   border-color: #e8e8e8;
   border-width: 1px;
@@ -150,12 +147,11 @@ h2 {
   width: 624px;
   margin-right: 37px;
   padding: 0;
-
 }
 
 .input-general {
   color: #121212;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   letter-spacing: -0.23px;
   padding-left: 17px;
@@ -171,7 +167,7 @@ h2 {
 }
 
 .option {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 
 .color-light {
@@ -205,7 +201,7 @@ h2 {
   background-color: #0290ff;
   color: #fafafa;
   border-style: none;
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: bold;
   margin-top: 5px;
 }
@@ -218,7 +214,7 @@ h2 {
 .placeholder {
   margin-left: 15px;
   color: #c4c4c4;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   letter-spacing: -0.15px;
 }
@@ -228,12 +224,12 @@ h2 {
 .title {
   font-size: 22px;
   font-weight: bold;
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .category {
   font-size: 14px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   color: #121212;
   font-weight: bold;
   margin-bottom: 3px;
@@ -248,7 +244,7 @@ h2 {
 .author {
   color: #4386bf;
   font-size: 14px;
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: lighter;
 }
 
@@ -288,7 +284,7 @@ span {
 }
 
 .progress-title {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 14px;
   color: #121212;
 }

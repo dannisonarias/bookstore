@@ -33,8 +33,10 @@ class BooksForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const book = this.createBook();
-    this.props.dispatch(ADD_BOOK(book));
+    if (this.state.title !== '') {
+      const book = this.createBook();
+      this.props.dispatch(ADD_BOOK(book));
+    }
   }
 
   render() {

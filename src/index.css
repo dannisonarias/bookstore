@@ -81,6 +81,10 @@ li {
   color: #121212;
 }
 
+li:hover {
+  cursor: pointer;
+}
+
 h1 {
   font-weight: bold;
   font-size: 30px;
@@ -111,6 +115,15 @@ h2 {
   border-width: thin;
   border-radius: 100%;
   border-color: #e8e8e8;
+}
+
+.user-icon > img {
+  height: 17px;
+  width: 17px;
+}
+
+.user-icon:hover {
+  cursor: pointer;
 }
 
 .books-container {

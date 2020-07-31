@@ -40,7 +40,7 @@ class BooksForm extends React.Component {
   render() {
     const BOOKS_CATEGORY = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
     return (
-      <form>
+      <form className="">
         <h2>ADD NEW BOOK</h2>
         <input className="input-general name-input border-inputs " onChange={this.handleChange} value={this.state.title} type="text" name="title" placeholder="Book Name"/>
         <div className="arrow select-input">

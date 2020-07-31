@@ -1,10 +1,15 @@
 html {
-  padding: 100px;
+  padding: 50px;
 }
 
 body {
+  background-color: #fafafa;
   font-family: 'Montserrat', sans-serif, 'Roboto Slab';
   margin: 0;
+  padding: 55px;
+  -webkit-box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.35);
 }
 
 .m-0 {
@@ -62,7 +67,7 @@ body {
   border-color: #e8e8e8
 }
 
-/* component-specific */ 
+/* component-specific */
 
 ul {
   list-style: none;
@@ -100,7 +105,7 @@ h2 {
 }
 
 .card {
-  height: 170px;
+  min-height: 170px;
   padding: 0 27px 0 27px;
   border-style: solid;
   border-width: thin;
@@ -118,7 +123,7 @@ h2 {
 
 }
 
-.input-general { 
+.input-general {
   color: #121212;
   font-family: "Montserrat";
   font-size: 16px;
@@ -237,7 +242,7 @@ span {
 .percentage {
   padding-left: 8px;
   color: #212121;
-  font-size:30px;
+  font-size: 30px;
 }
 
 .completed {
@@ -275,4 +280,18 @@ span {
   border-style: solid;
   border-color: #e1e1e1;
   border-width: 1px;
+}
+
+@media (min-width: 257px) and (max-width: 1200px) {
+  .d-flex-lg {
+    display: flex;
+  }
+
+  .d-flex-lg-column {
+    flex-direction: column;
+  }
+
+  .align-i-start-lg {
+    align-items: flex-start;
+  }
 }

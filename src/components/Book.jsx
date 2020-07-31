@@ -7,7 +7,7 @@ const Book = props => {
   } = props;
   if (filter.filter === '' || filter.filter === category) {
     return (
-      <tr className="card d-flex justify-c-between">
+      <tr className="card d-flex d-flex-lg-column align-i-start-lg justify-c-between">
         <div className="d-flex flex-column justify-c-center align-i-start">
           <th className="category op-05 ">{category}</th>
           <th className="title">{title}</th>

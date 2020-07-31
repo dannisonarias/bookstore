@@ -9,7 +9,7 @@ const CategoryFilter = (props) => {
   }
 
   return (
-    <select onChange = {(event)=>filterCategory(event)} name="Category">
+    <select className="input-general border-inputs select-input" onChange = {(event)=>filterCategory(event)} name="Category">
       {BOOKS_CATEGORY.map((x, index) => booksOption(x, index))}
     </select>
   );

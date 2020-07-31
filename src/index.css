@@ -16,6 +16,10 @@ body {
   margin: 0;
 }
 
+.margin-r-1 {
+  margin-right: 15px;
+}
+
 .d-flex {
   display: flex;
 }

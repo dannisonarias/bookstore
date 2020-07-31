@@ -26,11 +26,9 @@ const BookList = props => {
   const filter = props.filterReducer;
   return (
     <table  className="books-container">
-      <thead className="d-none">
-        <tr>
-          <th>id</th>
-          <th>title</th>
-          <th>category</th>
+      <thead className="d-flex">
+        <tr className="d-flex">
+          <th className="margin-r-1"><h2 class="op-05">Filter Category </h2></th>
           <th><CategoryFilter filterCategory={filterCategory} filter={filter}/></th>
         </tr>
       </thead>

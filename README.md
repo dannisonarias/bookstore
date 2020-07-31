@@ -20,7 +20,7 @@ to add books, remove them, and filter them by category.
 
 ### Bottom - Add book.
 
-![screenshot](Readme/screen-2.png)
+![screenshot](readme/screen-2.png)
 
 ## Setup
 

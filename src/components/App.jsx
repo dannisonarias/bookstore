@@ -4,7 +4,7 @@ import BooksForm from '../containers/BooksForm';
 
 const App = () => (
   <div className="">
-    <header className="header d-flex">
+    <header className="header d-flex d-flex-md-column">
       <h1 className="h1-header">Bookstore CSM</h1>
       <ul className="d-flex align-i-center">
         <li>
@@ -14,6 +14,9 @@ const App = () => (
           CATEGORIES
         </li>
       </ul>
+      <div class="user-icon d-flex justify-c-center align-i-center">
+        <img src={require('../assets/user-icon.png')} alt="icon" />
+      </div>
     </header>
     <BooksList />
     <BooksForm />

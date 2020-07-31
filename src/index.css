@@ -1,5 +1,5 @@
 html {
-  padding: 50px;
+  padding: 30px;
 }
 
 body {
@@ -7,15 +7,14 @@ body {
   font-family: 'Montserrat', sans-serif, 'Roboto Slab';
   margin: 0;
   padding: 55px;
-  -webkit-box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 0px 51px -3px rgba(0, 0, 0, 0.15);
 }
 
 .m-0 {
   margin: 0;
 }
-
 
 .d-flex {
   display: flex;
@@ -97,7 +96,21 @@ h2 {
 }
 
 .header {
-  height: 95px;
+  min-height: 95px;
+  position: relative;
+  
+}
+
+.user-icon {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 100%;
+  border-color: #e8e8e8;
 }
 
 .books-container {
@@ -129,6 +142,7 @@ h2 {
   font-size: 16px;
   letter-spacing: -0.23px;
   padding-left: 17px;
+  margin-top: 5px;
 }
 
 .select-input {
@@ -176,6 +190,7 @@ h2 {
   border-style: none;
   font-family: 'Roboto Slab';
   font-weight: bold;
+  margin-top: 5px;
 }
 
 .button-one:hover {
@@ -282,7 +297,7 @@ span {
   border-width: 1px;
 }
 
-@media (min-width: 257px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .d-flex-lg {
     display: flex;
   }
@@ -292,6 +307,20 @@ span {
   }
 
   .align-i-start-lg {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 257px) and (max-width: 790px) {
+  .d-flex-md {
+    display: flex;
+  }
+
+  .d-flex-md-column {
+    flex-direction: column;
+  }
+
+  .align-i-start-md {
     align-items: flex-start;
   }
 }

@@ -5,7 +5,7 @@ import BooksForm from '../containers/BooksForm';
 const App = () => (
   <div className="">
     <header className="header d-flex d-flex-md-column">
-      <h1 className="h1-header">Bookstore CSM</h1>
+      <h1 className="h1-header">Bookstore CMS</h1>
       <ul className="d-flex align-i-center">
         <li>
           BOOKS

@@ -16,7 +16,7 @@ const BookList = props => {
 
   const filterCategory = event => {
     let aux = {filter: event.target.value}
-    if (aux.filter === 'ALL') {
+    if (aux.filter === 'ALL' || filter === 'Category') {
       aux = {filter: ''};
     }
     props.dispatch(CHANGE_FILTER(aux))
@@ -25,12 +25,10 @@ const BookList = props => {
   const books = props.bookReducer;
   const filter = props.filterReducer;
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>id</th>
-          <th>title</th>
-          <th>category</th>
+    <table  className="books-container">
+      <thead className="d-flex">
+        <tr className="d-flex">
+          <th className="margin-r-1"><h2 class="op-05">Filter Category </h2></th>
           <th><CategoryFilter filterCategory={filterCategory} filter={filter}/></th>
         </tr>
       </thead>

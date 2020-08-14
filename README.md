@@ -12,8 +12,8 @@
 
 # Bookstore management application
 
-This project consists in building a bookstore application, using react-redux. Where you are able
-to add books, remove them, and filter them by category.
+This project consists in building a bookstore application, where you are able
+to add books, remove them, and filter them by category. Made with React & Redux.
 
 Index
 =====

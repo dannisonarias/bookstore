@@ -2,7 +2,7 @@
 [![Issues][issues-shield]][issues-url]
 <br />
 <p align="center">
-  <h2 align="center"> Bookstore </h2>
+  <h2 align="center"> </h2>
   <p align="center">
   	Bookstore (React/Redux :book:)
     <br />
@@ -10,7 +10,7 @@
     <br />
 </p>
 
-# Bookstore management application
+# Bookstore
 
 This project consists in building a bookstore application, where you are able
 to add books, remove them, and filter them by category. Made with React & Redux.

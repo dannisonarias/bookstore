@@ -82,6 +82,7 @@ After this open a browser and app will be hosted on a local server. (Port is dis
 
 - Github: [Github profile](https://github.com/Fig77)
 - Linkedin: [Facundo Iglesias](https://www.linkedin.com/in/figlesias/)
+- Email: fig.igle@gmail.com
 
 ## Contributing
 

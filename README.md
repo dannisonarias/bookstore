@@ -2,7 +2,7 @@
 [![Issues][issues-shield]][issues-url]
 <br />
 <p align="center">
-  <h2 align="center">Bookstore</h2>
+  <h1 align="center">Bookstore</h1>
   <p align="center">
   	Bookstore (React/Redux :book:)
     <br />

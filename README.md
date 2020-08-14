@@ -18,8 +18,8 @@ to add books, remove them, and filter them by category.
 Index
 =====
    * [Built with](#built-with)
-   * [Requirements](#requirements)
    * [Installation](#installation)
+     * [Requirements](#requirements)
    * [Usage](#usage)
       - [Screenshots](#screenshots)
       - [Live](#live)
@@ -34,24 +34,26 @@ Index
 - Heroku
 - RAW CSS
 
-## Requirements
-
-You will need Node.js to run this project locally, or a built version and a local server.
 
 ## Installation
 
-Clone this repository and access the project's directory.
+### Requirements
+
+You will need Node.js to run this project locally, or a built version and a local server.
+
+---
+
+ 1) Clone this repository and access the project's directory.
 ```bash
 cd ${folder_where_project_is}/
 npm install
 ```
-## Usage
-
-Run 
+ 2) For starting it local, run the next line.
 
 ```bash
 npm start
 ```
+
 After this open a browser and app will be hosted on a local server. (Port is display on console)
 
 ### Screenshots
